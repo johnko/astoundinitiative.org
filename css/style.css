@@ -1,0 +1,831 @@
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    html {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+    .icon-linkedin {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-top: 0px;
+      line-height: 16px;
+      vertical-align: text-top;
+      background-image: url(./images/in.png);
+      background-position: 0px 0px;
+      background-repeat: no-repeat;
+    }
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    .navbar .navbar-inner .container {
+      float: right;
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 12px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+      display: block;
+      max-height: 20px;
+    }
+
+    .brand img {
+      max-height: 30px;
+     }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+    .credit {
+      font-size: 0.85em;
+    }
+
+    a.linkedin {
+      background:url(./images/in.png) no-repeat left center;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      margin: 4px 4px 0 0;
+    }
+    a.twitter {
+      background:url(./images/twitter.png) no-repeat left center;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      margin: 4px 4px 0 0;
+    }
+    form.register {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .salonbanner {
+      background: black;
+      padding: 0 20px 0 0;
+    }
+    .salonbanner p {
+      margin: 0 40px 15px 0px;
+      color: #ddd;
+    }
+    .sb-caption {
+      /*padding-left: 20px;*/
+    }
+    #subCarousel {
+      background: #000;
+    }
+    #subCarousel .item,
+    .salonbanner,
+    .salonbanner img {
+      height: 300px;
+    }
+    .salonbanner img {
+      max-width: none;
+    }
+    #subCarousel .carousel-inner {
+      margin: auto;
+    }
+
+    .ppl-lead-cfc div.pplface img.pplface,
+    .ppl-lead-hd div.pplface img.pplface,
+    .ppl-lead-ocad div.pplface img.pplface,
+    .faces div.pplface img.pplface {
+      height: 90px;
+      width: 90px;
+      border: solid 1px #ddd;
+    }
+
+    .faces div.pplface a {
+    	display: block;
+    }
+
+    .pplwall li,
+    .consortwall li,
+    .contribwall li {
+      padding-top: 15px;
+      list-style: none;
+    }
+    .moretemplate p.info strong,
+    .pplwall p.info strong,
+    .consortwall p.info strong,
+    .contribwall p.info strong {
+      font-size: 1.3em;
+    }
+    .moretemplate p.info,
+    .pplwall p.info,
+    .consortwall p.info,
+    .contribwall p.info {
+      font-size: 0.85em;
+    }
+    .guestspeaker {
+      max-height: 90px;
+      max-width: 90px;
+      border: solid 1px #ddd;
+    }
+    .padright {
+      padding-right: 50px;
+    }
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 25px;
+    }
+
+    .cover .carousel-inner .item {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .backtop {
+      font-size: 60px !important;
+    }
+    .carousel500 .item {
+      height: 500px;
+    }
+    /*.carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;*/
+      /* min-width: 100%; */
+    /*}*/
+
+    .carousel-caption {
+      /* background-color: transparent; */
+      /* padding: 10px 30px 20px 0; */
+      /* position: static; */
+      background-color: rgba(0,0,0,.7);
+      max-width: 470px;
+      float: left;
+      padding: 0;
+      /* margin-top: 200px; */
+      margin-left: 0;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      font-size: 24px;
+      /* text-shadow: 0 1px 1px rgba(0,0,0,.4); */
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+    .carousel-caption-inner {
+      padding: 50px;
+    }
+    .carousel-caption-inner img {
+      margin-bottom: 20px;
+    }
+    .carousel-caption img {
+      position: relative;
+      width: auto;
+      min-width: auto;
+      max-width: 100%;
+      height: auto;
+      min-height: auto;
+      max-height: 100%;
+      /* opacity:0.7;
+      filter:alpha(opacity=70); */ /* For IE8 and earlier */
+    }
+    .logowall a {
+      margin-top: auto;
+      margin-bottom: auto;
+      vertical-align: middle;
+    }
+    .logo-pri img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .logo-pri {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      max-width: 300px;
+      padding: 20px;
+    }
+    .logo-ter img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .logo-ter {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      max-width: 200px;
+      padding: 0;
+    }
+    .toolpage .span3 img,
+    .bookpage .span3 img,
+    .repopage .span3 img {
+      margin-right: 10px;
+      border: solid 1px #eee;
+    }
+    .toolpage .span3 a.btn,
+    .bookpage .span3 a.btn,
+    .repopage .span3 a.btn {
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+    .pplwall .ppl-lead-cfc div.pplface,
+    .pplwall .ppl-lead-hd div.pplface,
+    .pplwall .ppl-lead-ocad div.pplface,
+    .pplwall .ppl-lead-cfc p.info,
+    .pplwall .ppl-lead-hd p.info,
+    .pplwall .ppl-lead-ocad p.info {
+      height: 120px;
+    }
+
+    .biowall .ppl-lead-cfc div.pplface }
+      height: 92px;
+    }
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .content-container {
+      position: relative;
+      top: -200px;
+    }
+    .content-featurette {
+      background: rgba(255,255,255,1);
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 0;
+      margin-bottom: -150px;
+    }
+    .content-featurette-noup {
+      background: rgba(255,255,255,1);
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 0;
+    }
+
+    .featurette-divider {
+      margin: 25px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 50px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -50px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+      margin-bottom: 30px;
+    }
+    .cb {
+      clear: both;
+    }
+    .cl {
+      clear: left;
+    }
+    .cr {
+      clear: right;
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    h2.featurette-heading {
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+    h3.featurette-heading {
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+    /* Add margin for heading in row-fluid */
+    .row-fluid h2.featurette-heading {
+      margin-bottom: 20px;
+    }
+    h2 .muted {
+      margin-bottom: 20px;
+    }
+
+    .leadpartners img {
+      height: 100px;
+      margin-left: 10px;
+    }
+    .tertpartners {
+      margin-top: 20px;
+    }
+    .row-fluid ul {
+      margin-bottom: 10px;
+    }
+    .row-fluid ul li {
+      margin-bottom: 10px;
+    }
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+    @media (min-width: 1215px) {
+      .moretemplate p.info {
+        height: 60px;
+      }
+      .ppl-consortium p.info,
+      .ppl-contrib p.info {
+        height: 90px;
+      }
+      .salonbanner p.lead {
+        margin-top: 40px;
+      }
+    }
+    @media (min-width: 1201px) {
+      .logowall .logo-pri a, .logo-pri {
+        /*line-height: 170px;*/
+        height: 170px;
+      }
+      .logowall .logo-ter a, .logo-ter {
+        /*line-height: 100px;*/
+        height: 100px;
+      }
+      .ppl-lead-cfc div.pplface,
+      .ppl-lead-hd div.pplface,
+      .ppl-lead-ocad div.pplface {
+        margin-right: 5px;
+        float: left;
+      }
+      .ppl-lead-cfc p.info,
+      .ppl-lead-hd p.info,
+      .ppl-lead-ocad p.info {
+        padding-top: 2px;
+        height: 140px;
+      }
+      .sb-img {
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 100% !important;
+      }
+    }
+    @media (min-width: 980px) and (max-width: 1214px) {
+      .moretemplate p.info {
+        height: 70px;
+      }
+      .ppl-consortium p.info,
+      .ppl-contrib p.info {
+        height: 100px;
+      }
+      .salonbanner p.lead {
+        margin-top: 40px;
+      }
+    }
+    @media (min-width: 981px) and (max-width: 1200px) {
+      .featurette-image {
+        max-width: 400px;
+      }
+      .logowall .logo-pri a, .logo-pri {
+        /*line-height: 130px;*/
+        height: 130px;
+      }
+      .logowall .logo-ter a, .logo-ter {
+        /*line-height: 90px;*/
+        height: 90px;
+      }
+      .sb-img {
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 100% !important;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 980px) {
+      .moretemplate p.info {
+        height: 80px;
+      }
+      .ppl-consortium p.info,
+      .ppl-contrib p.info {
+        height: 110px;
+      }
+      .sb-img {
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100% !important;
+      }
+      .salonbanner p.lead {
+        margin-top: 40px;
+      }
+    }
+    @media (min-width: 980px) {
+      .navbar-inner {
+        margin: 0 0 -20px 0;
+      }
+    }
+    @media (min-width: 641px) {
+      .caption-wrapper {
+        height: inherit;
+      }
+      .carousel-caption {
+        position: absolute;
+        bottom: 0px;
+      }
+    }
+    @media (min-width: 768px) {
+      h2.featurette-heading {
+        font-size: 50px;
+      }
+    }
+    @media (max-width: 979px) {
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: 0 0 -20px 0;
+      }
+      .carousel500 .item {
+        height: 500px;
+      }
+      .carousel-caption img {
+        position: relative;
+        width: auto;
+        min-width: auto;
+        max-width: 100%;
+        height: auto;
+        min-height: auto;
+        max-height: 100%;
+        /* opacity:0.7;
+        filter:alpha(opacity=70); */ /* For IE8 and earlier */
+      }
+      .featurette {
+        height: auto;
+        /* padding: 0; */
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+      .logo-pri {
+        padding: 5px;
+      }
+      .logowall .logo-pri a, .logo-pri {
+        /*line-height: 100px;*/
+        height: 100px;
+      }
+      .logowall .logo-ter a, .logo-ter {
+        /*line-height: 80px;*/
+        height: 80px;
+      }
+    }
+
+    @media (max-width: 850px) {
+      .carousel-caption {
+        /* padding: 10px 30px 20px 0; */
+        padding: 0;
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .salonbanner .span6 {
+        height: 0;
+      }
+      .sb-img {
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100% !important;
+      }
+      .sb-caption {
+        position: absolute;
+        top: 0;
+        margin-top: 130px;
+        padding-left: 50px;
+        padding-right: 30px;
+        text-shadow: 1px 1px 2px rgba(0,0,0,1);
+      }
+      .navbar-inner {
+        margin: 0 0 -20px 0;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel500 .item {
+        height: 450px;
+      }
+      .carousel-caption {
+        /* width: 65%; */
+        padding: 0 0 0 100px;
+        margin-left: -60px;
+        /* padding: 0; */
+        margin-top: 170px;
+      }
+      .carousel-caption h1 {
+        font-size: 28px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 20px;
+      }
+      .carousel-caption img {
+        position: relative;
+        width: auto;
+        min-width: auto;
+        max-width: 100%;
+        height: auto;
+        min-height: auto;
+        max-height: 100%;
+        /* opacity:0.7;
+        filter:alpha(opacity=70); */ /* For IE8 and earlier */
+      }
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+      h2.featurette-heading {
+        font-size: 40px;
+      }
+      .featurette .lead {
+        font-size: 26px;
+        line-height: 1.5;
+      }
+      .logowall .span3, .logowall .span2 {
+        float: left;
+        max-width: 40%;
+        margin: 10px 50px 10px 0;
+      }
+      .logo-pri img {
+        max-height: 140px;
+      }
+      .logo-pri {
+        max-width: 210px;
+        height: 130px;
+      }
+      .logo-ter img {
+        max-height: 85px;
+      }
+      .logo-ter {
+        max-width: 180px;
+        height: 100px;
+      }
+      .ppl-lead-cfc p.info,
+      .ppl-lead-hd p.info,
+      .ppl-lead-ocad p.info {
+        padding-top: 2px;
+        margin-bottom: 10px;
+      }
+      .toolpage .btn,
+      .bookpage .btn,
+      .repopage .btn {
+        margin-bottom: 10px;
+      }
+      .ppl-lead-cfc div.pplface,
+      .ppl-lead-hd div.pplface,
+      .ppl-lead-ocad div.pplface {
+        margin-right: 5px;
+        float: left;
+      }
+    }
+    @media (max-width: 566px) {
+      .moretemplate p.info,
+      .ppl-consortium p.info,
+      .ppl-contrib p.info {
+        margin-left: 40px;
+      }
+    }
+
+    @media (max-width: 639px) {
+      .carousel-caption {
+        position: static;
+        width: auto;
+        padding: 0 0 0 20px;
+        margin-left: 0;
+        /* padding: 0; */
+        margin-top: 70px;
+      }
+      .carousel-caption-inner {
+        padding: 30px;
+      }
+      .featurette {
+        padding-top: 10px;
+      }
+      .content-featurette {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+        margin-bottom: -150px;
+      }
+      .content-featurette-noup {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+      }
+      .logowall .span3, .logowall .span2 {
+        float: left;
+        max-width: 37%;
+        margin: 10px 30px 10px 0;
+      }
+      .logo-ter img {
+        max-height: 100%;
+      }
+      .logo-ter {
+        max-width: 180px;
+        height: 75px;
+      }
+    }
+    @media (min-width: 569px) and (max-width: 767px) {
+      .pplwall .span3 {
+        float: left;
+        height: 150px;
+        max-width: 46%;
+        margin: 10px 20px 10px 0;
+      }
+      .contribwall .ppl-contrib,
+      .consortwall .ppl-consortium {
+        float: left;
+        height: 70px;
+        width: 46%;
+        margin: 10px 20px 10px 0;
+      }
+      .consortwall .span6 {
+        float: left;
+        max-width: 46%;
+        margin: 10px 20px 10px 0;
+      }
+      .toolpage .span3 img,
+      .bookpage .span3 img,
+      .repopage .span3 img {
+        max-width: 200px;
+        min-height: 130px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        float: right;
+      }
+      .toolpage .span3,
+      .bookpage .span3,
+      .repopage .span3 {
+        min-height: 0px;
+      }
+    }
+    @media (max-width: 579px) {
+      .logo-pri {
+        max-width: 210px;
+        height: 90px;
+      }
+    }
+    @media (min-width: 400px) and (max-width: 566px) {
+      .consortwall .span6 {
+        margin: 10px 20px 10px 0;
+      }
+      .consortwall .ppl-consortium,
+      .contribwall .ppl-contrib {
+        height: 70px;
+        margin: 10px 20px 10px 0;
+      }
+      .pplwall .span3 {
+        height: 150px;
+        margin: 10px 20px 10px 0;
+      }
+    }
+    @media (min-width: 567px) and (max-width: 568px) { /*iphone5 landscape*/
+      .toolpage .span3 img,
+      .bookpage .span3 img,
+      .repopage .span3 img {
+        max-width: 200px;
+        min-height: 130px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        float: right;
+      }
+      .toolpage .span3,
+      .bookpage .span3,
+      .repopage .span3 {
+        min-height: 0px;
+      }
+      .consortwall .ppl-consortium,
+      .contribwall .ppl-contrib {
+        float: left;
+        height: 70px;
+        width: 46%;
+        margin: 10px 20px 10px 0;
+      }
+      .pplwall .span3 {
+        float: left;
+        height: 150px;
+        max-width: 45%;
+        margin: 10px 20px 10px 0;
+      }
+      .contribwall .ppl-contrib,
+      .consortwall .ppl-consortium {
+        float: left;
+        height: 70px;
+        width: 46%;
+        margin: 10px 20px 10px 0;
+      }
+    }
+    @media (max-width: 566px) {
+      .contribwall .ppl-contrib,
+      .consortwall .ppl-consortium {
+        height: 80px;
+        margin: 10px 20px 10px 0;
+      }
+      #subCarousel .item,
+      .salonbanner,
+      .salonbanner img {
+        height: 400px;
+      }
+      .salonbanner img {
+        margin-left: -120px;
+        max-height: 400px;
+        text-align: center;
+      }
+    }
+    @media (max-width: 320px) { /*iphone5 portrait*/
+      .salonbanner img {
+        margin-left: -170px;
+      }
+    }
