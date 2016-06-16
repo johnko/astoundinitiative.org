@@ -1,0 +1,7 @@
+# Customize
+customize:
+    favicon: # path to favicon
+
+# Plugins
+plugins:
+    google_analytics: UA-8718715-7 # enter the tracking ID for your Google Analytics
